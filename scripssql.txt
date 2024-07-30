@@ -1,0 +1,20 @@
+CREATE DATABASE RegistroEstudiantes;
+
+USE RegistroEstudiantes;
+
+CREATE TABLE Usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_usuario VARCHAR(50) NOT NULL,
+    clave VARCHAR(50) NOT NULL
+);
+
+
+CREATE TABLE Estudiantes (
+    id_estudiante INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    apellido VARCHAR(50) NOT NULL,
+    edad VARCHAR(50),
+    estado VARCHAR(50),
+    estado_civil VARCHAR(50)
+ 
+);
